@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            心理系实验项目Beta
+        </title>
+        <meta charset="utf-8" />
+        <link href="favicon.ico" rel="shortcut icon" />
+        <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    
+    <body>
+		<div class="row text-center">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <p style="font-size:36px;margin-top:100px;">实验的一部分 已经结束</p>
+                <p style="font-size:36px;">实验下一部分 即将开始</p>
+                <p style="font-size:36px;">点击 空格 按钮继续</p> 
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    <script>
+        $(document).on({
+      keydown: function(e){
+        if(e.keyCode == 32){
+          window.location.href = "emotionHealth.html"
+        }
+      }
+    })
+    </script>
+    </body>
+</html>

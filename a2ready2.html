@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            心理系实验项目Beta
+        </title>
+        <link href="favicon.ico" rel="shortcut icon" />
+        <meta charset="utf-8" />
+        <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+		<div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 style="margin-top:100px;">词语归类任务 </h1>
+                <p style="font-size:18px;">在下面的系列任务中，您会看到词语一个个地出现在屏幕中央，您的任务是对这些词语进行分类。 </p>
+                <p style="font-size:18px;">其中一种分类任务中，您将要把刺激词分成以下两类：“我”或“他人” </p>
+                <p style="font-size:18px;">在另一种分类任务中，您将要把刺激词分成以下两类：“幸福”或“不幸福” </p>
+                <p style="font-size:18px;">您要按D键或者K键尽快地把每个词语归到适当的类别  </p>
+                
+                <p style="color:red;font-weight:700;font-size:18px;">注意：与D键和K键相对应的类别将显示在屏幕上方，请注意这些类别标准，它们在不同的任务中是不一样的。</p>
+                
+                <h1 class="text-center">按 空格键 继续</h1>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    <script>
+    $(document).on({
+      keydown: function(e){
+        if(e.keyCode == 32){
+          window.location.href = "a2ready3.html"
+        }
+      }
+    })
+    </script>
+    </body>
+</html>

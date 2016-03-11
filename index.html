@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>
+      心理系实验项目Beta
+    </title>
+    <meta charset="utf-8" />
+    <link href="favicon.ico" rel="shortcut icon" />
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+    <div style="margin:0px auto; width:0px; height:0px; overflow:hidden;">
+        <img src="CNU.png" width="700px">
+    </div>
+    <div class="row" style="margin-left:20px;">
+      <h1>心理系实验项目 Beta</h1>
+      <div class="col-lg-3">
+        <div class="input-group">
+          <span id="name" class="input-group-addon" id="basic-addon1">
+            姓名
+          </span>
+          <input id="Username" type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+        <!-- /input-group -->
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">
+            生日
+          </span>
+          <input id="birthYear" type="text" class="form-control" placeholder="birthYear" aria-describedby="basic-addon1">
+          <input id="birthMonth" type="text" class="form-control" placeholder="birthMonth" aria-describedby="basic-addon1">
+          <input id="birthDay" type="text" class="form-control" placeholder="birthDay" aria-describedby="basic-addon1">
+        </div>
+        <!-- /input-group -->
+      </div>
+      <!-- /.col-lg-6 -->
+      <div class="col-lg-3">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1">
+            邮箱
+          </span>
+          <input id="UserEmail" type="text" class="form-control" placeholder="UserEmail" aria-describedby="basic-addon1">
+        </div>
+        <div class="birthplace">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">最近生活地区<span class="caret">
+            </span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="height:200px;overflow:scroll;">
+            <li><a href="#">北京市</a></li>
+            <li><a href="#">天津市</a></li>
+            <li><a href="#">上海市</a></li>
+            <li><a href="#">重庆市</a></li>
+            <li><a href="#">河北省</a></li>
+            <li><a href="#">山西省</a></li>
+            <li><a href="#">辽宁省</a></li>
+            <li><a href="#">吉林省</a></li>
+            <li><a href="#">黑龙江省</a></li>
+            <li><a href="#">江苏省</a></li>
+            <li><a href="#">安徽省</a></li>
+            <li><a href="#">福建省</a></li>
+            <li><a href="#">江西省</a></li>
+            <li><a href="#">山东省</a></li>
+            <li><a href="#">河南省</a></li>
+            <li><a href="#">湖北省</a></li>
+            <li><a href="#">湖南省</a></li>
+            <li><a href="#">广东省</a></li>
+            <li><a href="#">海南省</a></li>
+            <li><a href="#">四川省</a></li>
+            <li><a href="#">贵州省</a></li>
+            <li><a href="#">云南省</a></li>
+            <li><a href="#">陕西省</a></li>
+            <li><a href="#">甘肃省</a></li>
+            <li><a href="#">青海省</a></li>
+            <li><a href="#">广西壮族自治区</a></li>
+            <li><a href="#">内蒙古自治区</a></li>
+            <li><a href="#">西藏自治区</a></li>
+            <li><a href="#">宁夏回族自治区</a></li>
+            <li><a href="#">新疆维吾尔自治区</a></li>
+            <li><a href="#">香港特别行政区</a></li>
+            <li><a href="#">澳门特别行政区</a></li>
+          </ul>
+        </div>
+        <div class="job">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">职业<span class="caret">
+            </span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">学生</a></li>
+            <li><a href="#">医生</a></li>
+            <li><a href="#">教师</a></li>
+            <li><a href="#">农民</a></li>
+            <li><a href="#">工人</a></li>
+            <li><a href="#">个体户</a></li>
+            <li><a href="#">其它</a></li>
+          </ul>
+        </div>
+        <div class="education">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">学历<span class="caret">
+            </span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">本科</a></li>
+            <li><a href="#">专科</a></li>
+            <li><a href="#">硕士</a></li>
+            <li><a href="#">博士</a></li>
+            <li><a href="#">其它</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
+    <button style="width:150px;margin:20px;" type="button" id="ensure" class="btn btn-primary">
+      确认
+    </button>
+    <script type="text/javascript" src="js/col_data.js">
+    </script>
+  </body>
+
+</html>

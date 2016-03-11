@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            心理系实验项目Beta
+        </title>
+        <link href="favicon.ico" rel="shortcut icon" />
+        <meta charset="utf-8" />
+        <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+		<div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 style="margin-top:100px;">亲爱的被试： </h1>
+                <p style="font-size:18px;">接下来的系列任务将涉及到四个类别的刺激， </p>
+                <p style="font-size:18px;">这四个类别以及它们的样例如下：</p>
+                <p style="font-size:18px;">我：我的、自己、咱、俺 </p>
+                <p style="font-size:18px;">他人：他、他们、别人、他们的 </p>
+                <p style="font-size:18px;">幸福：高兴、满足、愉快、乐观、充实 </p>
+                <p style="font-size:18px;">不幸福：烦恼、焦虑、悲伤、抑郁、沮丧</p>
+                
+                <h1 class="text-center">按 空格键 开始实验</h1>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    <script>
+    $(document).on({
+      keydown: function(e){
+        if(e.keyCode == 32){
+          window.location.href = "personEmotion.html"
+        }
+      }
+    })
+    </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            心理系实验项目Beta
+        </title>
+        <link href="favicon.ico" rel="shortcut icon" />
+        <meta charset="utf-8" />
+        <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+		<div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 style="margin-top:100px;">亲爱的被试：</h1>
+                <p style="font-size:18px;">您好！您正在参加的是一项内隐心理测验，您将完成一系列任务，比如问卷和快速分类。</p>
+                <ol>
+                    <li>您所在的环境没有音乐、杂音或其他噪音干扰。</li>
+                    <li>关闭手机或保持手机静音。</li>
+                    <li>务必认真作答，因为只有这样最后的结果才会可靠。</li>
+                    <li>请把键盘输入方式调为英文方式。 </li>
+                </ol>
+                <h1 class="text-center">按 空格键 继续</h1>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    <script>
+    $(document).on({
+      keydown: function(e){
+        if(e.keyCode == 32){
+          window.location.href = "a2ready2.html"
+        }
+      }
+    })
+    </script>
+    </body>
+</html>
