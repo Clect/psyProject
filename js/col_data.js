@@ -1,10 +1,4 @@
 var personalInfomation = new Array();
-
-
-$("#ensure").click(function(){
-    var a = $('.birthplace .dropdown-toggle').text();
-    var b = $('.job .dropdown-toggle').text();
-    var c = $('.education .dropdown-toggle').text();
     $('.birthplace .dropdown-menu li a').click(function(){
         var val = this.innerHTML;
         $('.birthplace button').html(val);
@@ -17,6 +11,12 @@ $("#ensure").click(function(){
         var val = this.innerHTML;
         $('.education button').html(val);
     });
+    var a = $('.birthplace .dropdown-toggle').text();
+    var b = $('.job .dropdown-toggle').text();
+    var c = $('.education .dropdown-toggle').text();
+    
+
+$("#ensure").click(function(){
 	var flag = false;
 	personalInfomation.push($('#Username').val());
     personalInfomation.push($('#birthYear').val());
@@ -27,7 +27,7 @@ $("#ensure").click(function(){
     personalInfomation.push($('.job button').text());
     personalInfomation.push($('.education button').text());
     console.log(personalInfomation);
-    for(var i = 0;i < 5;i++){
+    for(var i = 0;i < personalInfomation.length;i++){
         if(personalInfomation[i] == ''){
             flag = true;
             break;
