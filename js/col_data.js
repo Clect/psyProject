@@ -1,21 +1,22 @@
 var personalInfomation = new Array();
-var a = $('.birthplace .dropdown-toggle').text();
-var b = $('.job .dropdown-toggle').text();
-var c = $('.education .dropdown-toggle').text();
-$('.birthplace .dropdown-menu li a').click(function(){
-    var val = this.innerHTML;
-    $('.birthplace button').html(val);
-});
-$('.job .dropdown-menu li a').click(function(){
-    var val = this.innerHTML;
-    $('.job button').html(val);
-});
-$('.education .dropdown-menu li a').click(function(){
-    var val = this.innerHTML;
-    $('.education button').html(val);
-});
+
 
 $("#ensure").click(function(){
+    var a = $('.birthplace .dropdown-toggle').text();
+    var b = $('.job .dropdown-toggle').text();
+    var c = $('.education .dropdown-toggle').text();
+    $('.birthplace .dropdown-menu li a').click(function(){
+        var val = this.innerHTML;
+        $('.birthplace button').html(val);
+    });
+    $('.job .dropdown-menu li a').click(function(){
+        var val = this.innerHTML;
+        $('.job button').html(val);
+    });
+    $('.education .dropdown-menu li a').click(function(){
+        var val = this.innerHTML;
+        $('.education button').html(val);
+    });
 	var flag = false;
 	personalInfomation.push($('#Username').val());
     personalInfomation.push($('#birthYear').val());

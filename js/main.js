@@ -102,11 +102,7 @@ function chickButton() {
                             window.location.href = "middle.html"
                         }
                         else{
-                            $.post("http://localhost:8088/record", localStorage.record,
-                            function(){
-                                localStorage.clear();
-                                window.location.href = "over.html"
-                            });
+                            window.location.href = "over.html"
                         }
                     }
                     alert("此部分实验结束");
