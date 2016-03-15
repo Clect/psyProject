@@ -21,7 +21,7 @@
             <div class="col-md-8">
                 <h1><br \></h1>
                 <ol>
-                    <li>雾霾对我的生活造成了一定困扰 (影响程度) </li>
+                    <li>雾霾对我的生活造成了一定困扰 </li>
                     <span>非常不同意</span>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary ">
@@ -55,7 +55,7 @@
                     </div>
                     <span>非常同意</span>
                     <li>
-                        不管我做什么，都影响不好空气质量的好坏 （可控性）
+                        不管我做什么，都影响不好空气质量的好坏
                     </li>
                     <span>非常不同意</span>
                     <div class="btn-group" data-toggle="buttons">
@@ -90,7 +90,7 @@
                     </div>
                     <span>非常同意</span>
                     <li>
-                        我知道雾霾会影响身体的什么功能 （了解程度）
+                        我知道雾霾会影响身体的什么功能
                     </li>
                     <span>非常不同意</span>
                     <div class="btn-group" data-toggle="buttons">
@@ -125,7 +125,7 @@
                     </div>
                     <span>非常同意</span>
                     <li>
-                        我觉得雾霾对身体的伤害是长期且慢性的 （影响的持续程度）
+                        我觉得雾霾对身体的伤害是长期且慢性的
                     </li>
                     <span>非常不同意</span>
                     <div class="btn-group" data-toggle="buttons">
@@ -160,7 +160,7 @@
                     </div>
                     <span>非常同意</span>
                     <li>
-                        每隔一段时间必定会发生雾霾 （发生的可能性）
+                        每隔一段时间必定会发生雾霾
                     </li>
                     <span>非常不同意</span>
                     <div class="btn-group" data-toggle="buttons">
@@ -195,7 +195,7 @@
                     </div>
                     <span>非常同意</span>
                     <li>
-                        如果不加以治理，雾霾会越来越严重 （结果严重性）
+                        如果不加以治理，雾霾会越来越严重
                     </li>
                     <span>非常不同意</span>
                     <div class="btn-group" data-toggle="buttons">
@@ -230,7 +230,7 @@
                     </div>
                     <span>非常同意</span>
                     <li>
-                        我觉得雾霾并不会影响我的心情 （情感体验）
+                        我觉得雾霾并不会影响我的心情
                     </li>
                     <span>非常不同意</span>
                     <div class="btn-group" data-toggle="buttons">
@@ -279,7 +279,7 @@
                        for(var i = 0;i < 7;i++){
                            localStorage.record += (a[i] + ",");
                        }
-                       $.post("http://localhost:8088/record", localStorage.record,
+                       $.post("http://psy.gizeta.me:8088/record", localStorage.record,
                        function(){
                                 localStorage.clear();
                                 window.location.href = "over2.html"

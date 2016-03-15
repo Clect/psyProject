@@ -74,14 +74,9 @@ function chickButton() {
                     alert("继续练习");
                 }
                 else {
-                    console.log("error!!!!!!!!",randomArrayLength, timeRecord.length);
                     var err = '测试未做完';
-                    $.post("http://localhost:8088/originalExam", err,
-                    function(){
-                        alert("抱歉！您的实验数据提交失败，请重新开始实验");
-                    }).error(function(){
-                        alert("抱歉！您的实验数据提交失败，请重新开始实验");
-                    });
+                    localStorage.record += (",original, " + timeRecord.join(',') + "," + err + "," + randomArrayLength + "," + timeRecord.length);
+                    localStorage.record += (",originalChoice , " + choiceRecord.join(','));
                     isPractice = true;
                     isOpposite = true;
                     if(wordType == "personEmotion"){
@@ -110,12 +105,17 @@ function chickButton() {
                 else {
                     console.log("error!!!!!!!!",randomArrayLength, timeRecord.length);
                     var err = '测试未做完';
-                    $.post("http://localhost:8088/record", err,
-                    function(){
-                        alert("抱歉！您的实验数据提交失败，请重新开始实验");
-                    }).error(function(){
-                        alert("抱歉！您的实验数据提交失败，请重新开始实验");
-                    });
+                    localStorage.record += (",original, " + timeRecord.join(',') + "," + err + "," + randomArrayLength + "," + timeRecord.length);
+                    localStorage.record += (",originalChoice , " + choiceRecord.join(','));
+                    if(level == 6){
+                        if(wordType == "personEmotion"){
+                            window.location.href = "middle.html"
+                        }
+                        else{
+                            window.location.href = "over.html"
+                        }
+                    }
+                    alert("此部分实验结束");
                 }
             }
         }
