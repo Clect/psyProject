@@ -206,11 +206,22 @@ function getWords(path) {
             data = words.health;
         }
         else if(path == 'personEmotion'){
-            data = words.personEmotion;
+            if(isPractice){
+                data = words.personEmotion_;
+            }
+            else{
+                data = words.personEmotion;
+            }
         }
         else if(path == 'emotionHealth'){
-            data = words.emotionHealth;
+            if(isPractice){
+                data = words.emotionHealth_;
+            }
+            else{
+                data = words.emotionHealth;
+            }
         }
+
         randomArrayLength = data.length;
         var num = new Array;
         for(var i = 0; i < randomArrayLength; i++){ 
